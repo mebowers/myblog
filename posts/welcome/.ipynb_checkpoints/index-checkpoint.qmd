@@ -1,0 +1,15 @@
+---
+title: "Welcome To My Blog"
+author: "Margaret Bowers"
+date: "2026-02-24"
+categories: [news]
+---
+
+This is the first post in my Quarto blog. Welcome!
+
+![](glenrose_trail.jpg)
+
+This is my blog space dedicated to reviewing and exploring what I learned in my data science bootcamp with NYC Data Science Academy. 
+
+About me
+

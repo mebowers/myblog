@@ -1,0 +1,33 @@
+---
+title: "Welcome To My Blog"
+author: "Margaret Bowers"
+date: "2026-04-10"
+categories: [news]
+---
+
+Wecome to my data science and analytics blog dedicated to reviewing and exploring what I learned in my data science bootcamp with NYC Data Science Academy.
+
+![](glenrose_trail.jpg)
+
+
+A little bit about me... 
+
+I am a professional violinist in Spokane, Washington, with a long-ago background in Physics. I am exploring career opportunities in data science and am eager to learn new things.
+
+A long time ago, I earned a Bachelor's of Science degree in Physics from the University of Rochester and was a music major in violin performance at the Eastman School of Music, although I did not complete a music degree. I took lessons as a meditative diversion from my physics studies and never considered performance as a viable occupation. When I graduated, I spent some time working at the Los Alamos National Laboratory before realizing that I love music and was not ready to give up that part of my life for graduate school. I auditioned for and got into the Santa Fe Symphony and then the Spokane Symphony Orchestra, where I have spent the last two decades as a professional violinist.  
+
+The pandemic was a turning point for me, leaving me anxious about my chosen field and our culture's commitment to supporting arts institutions. I decided it was time to put some effort behind my curiosity for other things. I have always been interested in writing and science and earned a certificate in Technical Writing from the University of Washington. I was not prepared for how technology has changed since I was in college. There was a long list of skills valued in technical writers and I chose the most unappetizing one to explore in order to rule things out. I thought I would dislike coding (HTML) and was totally suprised to find that it is kind of fun. With my background, it was not hard to see that data science might be fun too. 
+
+I jumped into the NYC Data Science Bootcamp with Machine Learning in the summer of 2024 in order to learn something about myself and to reach outside my comfort zone. I learned how to program in Python and how to visualize and talk about data. I made a dashboard ap featuring data I scraped from a string instrument auction website. I learned about linear regression and classification and decision tree models. I gave presentations on my findings. Broadly, I learned that people can do amazing things with data. 
+
+I see that things are changing quickly for people who work in this field. I believe that there is room for everyone, and while there is a great deal of pessimism about this, I am eager to show up and try. I value the long path to learning. It is through our struggle to understand that we acquire expertise, where we practice creativity and build community. Being a professional musician has taught me this. 
+
+There is so much to learn and I am excited to explore the emerging tools that will make working with and understanding data useful and meaningful.   
+
+Thanks for reading,
+
+Margaret
+
+
+
+

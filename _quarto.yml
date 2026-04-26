@@ -1,0 +1,23 @@
+project:
+  type: website
+
+website:
+  description: "A blog for my Data Science Bootcamp review"
+  site-url: https://mebowers.github.io/ 
+  title: "mebowers blog"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/mebowers/
+#      - icon: linkedin
+#        href: https://www.linkedin.com/in/margaret-bowers-389b1425a/
+format:
+  html:
+    theme:
+      - cosmo
+      - brand
+    css: styles.css
+
+
+
