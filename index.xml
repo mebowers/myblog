@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss  xmlns:atom="http://www.w3.org/2005/Atom" 
+      xmlns:media="http://search.yahoo.com/mrss/" 
+      xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+      xmlns:dc="http://purl.org/dc/elements/1.1/" 
+      version="2.0">
+<channel>
+<title>mebowers blog</title>
+<link>https://mebowers.github.io/</link>
+<atom:link href="https://mebowers.github.io/index.xml" rel="self" type="application/rss+xml"/>
+<description>A blog for my Data Science Bootcamp review</description>
+<generator>quarto-1.8.27</generator>
+<lastBuildDate>Fri, 10 Apr 2026 07:00:00 GMT</lastBuildDate>
+<item>
+  <title>Welcome To My Blog</title>
+  <dc:creator>Margaret Bowers</dc:creator>
+  <link>https://mebowers.github.io/posts/welcome/</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<p>Wecome to my data science and analytics blog dedicated to reviewing and exploring what I learned in my data science bootcamp with NYC Data Science Academy.</p>
+<p><img src="https://mebowers.github.io/posts/welcome/glenrose_trail.jpg" class="img-fluid"></p>
+<p>A little bit about me…</p>
+<p>I am a professional violinist in Spokane, Washington, with a long-ago background in Physics. I am exploring career opportunities in data science and am eager to learn new things.</p>
+<p>A long time ago, I earned a Bachelor’s of Science degree in Physics from the University of Rochester and was a music major in violin performance at the Eastman School of Music, although I did not complete a music degree. I took lessons as a meditative diversion from my physics studies and never considered performance as a viable occupation. When I graduated, I spent some time working at the Los Alamos National Laboratory before realizing that I love music and was not ready to give up that part of my life for graduate school. I auditioned for and got into the Santa Fe Symphony and then the Spokane Symphony Orchestra, where I have spent the last two decades as a professional violinist.</p>
+<p>The pandemic was a turning point for me, leaving me anxious about my chosen field and our culture’s commitment to supporting arts institutions. I decided it was time to put some effort behind my curiosity for other things. I have always been interested in writing and science and earned a certificate in Technical Writing from the University of Washington. I was not prepared for how technology has changed since I was in college. There was a long list of skills valued in technical writers and I chose the most unappetizing one to explore in order to rule things out. I thought I would dislike coding (HTML) and was totally suprised to find that it is kind of fun. With my background, it was not hard to see that data science might be fun too.</p>
+<p>I jumped into the NYC Data Science Bootcamp with Machine Learning in the summer of 2024 in order to learn something about myself and to reach outside my comfort zone. I learned how to program in Python and how to visualize and talk about data. I made a dashboard ap featuring data I scraped from a string instrument auction website. I learned about linear regression and classification and decision tree models. I gave presentations on my findings. Broadly, I learned that people can do amazing things with data.</p>
+<p>I see that things are changing quickly for people who work in this field. I believe that there is room for everyone, and while there is a great deal of pessimism about this, I am eager to show up and try. I value the long path to learning. It is through our struggle to understand that we acquire expertise, where we practice creativity and build community. Being a professional musician has taught me this.</p>
+<p>There is so much to learn and I am excited to explore the emerging tools that will make working with and understanding data useful and meaningful.</p>
+<p>Thanks for reading,</p>
+<p>Margaret</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <guid>https://mebowers.github.io/posts/welcome/</guid>
+  <pubDate>Fri, 10 Apr 2026 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Capstone: Machine Learning for Healthcare Fraud Detection</title>
+  <dc:creator>Margaret Bowers</dc:creator>
+  <link>https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="machine-learning-for-healthcare-fraud-detection" class="level1">
+<h1>Machine Learning for Healthcare Fraud Detection</h1>
+<section id="by-margaret-bowers" class="level3">
+<h3 class="anchored" data-anchor-id="by-margaret-bowers">by Margaret Bowers</h3>
+<div id="ededed14-3812-499e-8a32-764a945fb1bc" class="cell" data-execution_count="120">
+<div class="cell-output cell-output-display" data-execution_count="120">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><em>Photo by <a href="https://unsplash.com/@hush52">Hush Naidoo Jade Photography on Unsplash</a></em></p>
+</section>
+<section id="intro" class="level2">
+<h2 class="anchored" data-anchor-id="intro">Intro</h2>
+<p>Healthcare fraud costs insurers tens of billions of dollars annually. Given time constraints, it’s impossible to manually review each claim for possible fraud. Insurers have come to rely on machine learning algorithms to identify fraud patterns and bring to light features that are most predictive of fraud. While they are helpful, algorithms are still prone to errors. This project was an opportunity to explore type I and type II errors inherent to classification models. It also makes it possible to quantify the costs of these mistakes so that insurers can make the most informed decision in selecting the most efficient models for their investigations.</p>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>The data sets I used were taken from Kaggle’s <a href="https://www.kaggle.com/datasets/rohitrox/healthcare-provider-fraud-detection-analysis">Healthcare Provider Fraud Detection Analysis training datasets</a>.</p>
+<p>They included beneficiary data, claims data (inpatient and outpatient), and provider labels with suspected fraud status. There was no data dictionary for me to refer to, so I composed my own based on my best understanding of industry terminology.</p>
+<p>Data types included numerical features (reimbursements and deductibles), date features and categorical features such as beneficiary characteristics and billing and health condition codes.</p>
+<p>Categorical feature cardinality is generally a concern for modeling. Some features (e.g.&nbsp;gender, race, and the 11 binary health conditions) were not complex, but many features were highly cardinal with over 100 different categories. This complexity was ultimately handled through feature engineering and resolved as the data was aggregated to the provider level.</p>
+<div id="4abf29c0-63ef-4d55-8c41-6be8e0047c94" class="cell" data-execution_count="122">
+<div class="cell-output cell-output-display" data-execution_count="122">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="missing-data-and-feature-engineering" class="level2">
+<h2 class="anchored" data-anchor-id="missing-data-and-feature-engineering">Missing data and feature engineering</h2>
+<p>There were a considerable number of missing values in the data, which can be seen at a glance in the following plots.</p>
+<div id="c3df70fb-8438-48d6-b0fe-d4a9e336993a" class="cell" data-execution_count="124">
+<div class="cell-output cell-output-display" data-execution_count="124">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="2ad7e456-4200-4f34-8549-c93a487a58b4" class="cell" data-execution_count="126">
+<div class="cell-output cell-output-display" data-execution_count="126">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="cb4a6906-569d-4e0c-99a3-4b4817b1f57a" class="cell" data-execution_count="128">
+<div class="cell-output cell-output-display" data-execution_count="128">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Missing values were handled either through imputation (0s for missing beneficiary DeductibleAmtPaid and ClmAdmitDiagnosisCode) or through feature engineering.</p>
+<p>For the beneficiary data, I created a “number of chronic conditions” feature that counted the number of chronic conditions associated with each beneficiary. This is a measure of the overall health associated with each beneficiary and addresses the question, “are some providers associated with patients with more complex health conditions?” This in itself is not necessarily a measure of fraud, since providers may specialize in older or younger patients, but it retains some level of beneficiary data. Beneficiary data was also missing DOD values that I handled by creating an is_deceased feature.</p>
+<p>I imported these and selected beneficiary features to the claims datasets and created a series of claim-level features, again with the ultimate goal of aggregating to the provider level. These features included:</p>
+<ul>
+<li><strong>patient age</strong> at time of service</li>
+<li><strong>duration of inpatient admission</strong> (length of hospitalization; inpatient only)</li>
+<li><strong>duration of claim</strong></li>
+<li><strong>total claim amount</strong> (reimbursement + deductible paid)</li>
+<li><strong>portion of total claim covered by insurance</strong> (reimbursement / total claim amount)</li>
+<li><strong>number of unique diagnosis and procedure codes</strong></li>
+</ul>
+<p>I noticed a few things through the course of my EDA that helped direct my feature engineering. Inpatient providers suspected of fraud were filing 4-5 times as many claims per month as non-fraud providers. Fraud status was also associated with high physician ID reuse.</p>
+<p>Taking that into account, the features I created at the provider level included:</p>
+<ul>
+<li><strong>number of claims</strong> associated with each provider</li>
+<li><strong>attending_ratio, operating_ratio, other_ratio, and patient_ratio</strong> (number unique IDs per number of claims, for each provider)</li>
+<li><strong>number of states and counties</strong> associated with each provider</li>
+<li><strong>monthly claim frequency</strong></li>
+<li><strong>total reimbursements</strong> over all the claims</li>
+</ul>
+<p>From here, I aggregated all my data to the provider level and added the following features:</p>
+<ul>
+<li><strong>number of unique diagnosis group codes</strong> (to retain a measure of group code diversity)</li>
+<li><strong>number of patient races</strong> (to track patient diversity)</li>
+<li><strong>mean gender</strong></li>
+<li><strong>mean deductible</strong> paid per claim (to determine if providers collect deductibles for every claim or if they tend to waive them)</li>
+<li><strong>mean and std of numerical finance features</strong> (reimbursement, total claim amount), to understand not just how the means stack up, but to indicate significant variability among providers</li>
+<li><strong>mean claim and admission durations</strong> (a basis for identifying claims open longer for some providers than others and if some providers’ patients tend to have longer stays in the hospital)</li>
+</ul>
+<p>At this point I had inpatient and outpatient data for providers. I added _ip and _op suffixes to each dataset (to track them separately) and a column indicating whether a provider has an inpatient practice or an outpatient practice to see if practice type by itself was an indicator of fraud. I then aggregated at the provider level and combined both datasets into a single, provider-level dataframe.</p>
+<p>There are a few things to notice about this provider data. First, there are a lot of missing values. While there were 5410 providers in total, only those with both inpatient and outpatient practices have complete data for all the features, making the dataset sparse.</p>
+<div id="749cf7bc-ebc9-4db1-8791-54918e1e4de8" class="cell" data-execution_count="130">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Second, the classes are imbalanced, with providers suspected of fraud representing the minority class.</p>
+<div id="23d937a3-0686-45a7-8f4e-194f96756255" class="cell" data-execution_count="134">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img" width="500"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>These characteristics of the data persuaded me to choose algorithms that would handle missing features and class imbalance well. I chose to focus on logistic regression (as a baseline) and ensemble tree models, including Random Forest, LightGBM, XGBoost, and CatBoost. While this was straightforward for the ensemble models, logistic regression does not handle missing values or class imbalance naturally, so I created an imbalanced model for reference, as well as a balanced model using SMOTE training data.</p>
+<p>For the ensemble methods, I set balancing parameters for each algorithm to handle the class imbalance and left them to handle missing values internally. I split my data, trained my models, and evaluated on imbalanced test data.</p>
+</section>
+<section id="model-evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="model-evaluation">Model Evaluation</h2>
+<p>In evaluating my models, I considered several metrics in combination with one another, starting with accuracy. I expected it to be overoptimistic due to the class imbalance. I also looked at precision-recall as a better measure of imbalanced performance. Finally, I considered the costs of false negatives and false positives in order to measure the economic impact of model misclassification. I experimented with tuning but did not find it particularly helpful for my analysis.</p>
+<p>Looking at ROC-AUC and pr-AUC curves for all the models allowed me to compare their performances.The ROC-AUC curves confirm that the models are overoptimistic due to the imbalanced data.</p>
+<div id="a81b5307-941e-4c07-bac9-4b56e674d72c" class="cell" data-execution_count="136">
+<div class="cell-output cell-output-display" data-execution_count="136">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The pr-AUC curves remove the dependence on the over-represented majority class and is a better measure of model performance for this data. LightGBM had the best performance, and the SMOTE balanced logistic regression model was the worst of the lot.</p>
+<div id="036a25e7-3787-4cd0-9f2c-233d11a957fb" class="cell" data-execution_count="139">
+<div class="cell-output cell-output-display" data-execution_count="139">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Overall, the models are performing similarly. Ast I was really interested in understanding how they would stack up in a business context, I looked at each model’s confusion matrix and evaluated the costs associated with type I and type II errors.</p>
+<div id="69ce5efd-46e9-4391-92d2-43ab56abb1bc" class="cell" data-execution_count="141">
+<div class="cell-output cell-output-display" data-execution_count="141">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-11-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Type II errors include all the actual fraud that is misclassified by the model or fraud that escapes detection. Type I errors include instances of non-fraud that are mistakenly classified as fraud, potentially drawing down resources in unnecessary investigations. This is where the meat of model evaluation lies. It is difficult to pinpoint an exact numerical cost for each type of mistake. However, we can see how the models diverge under different assumptions. To illustrate this I considered 3 scenarios:</p>
+<ol type="1">
+<li><p>fps and fns cost the same</p></li>
+<li><p>fns are 10 times as expensive as fps</p></li>
+<li><p>fns are 100 times as expensive as fps</p></li>
+</ol>
+<div id="7460e373-9872-4975-ab63-896e2164bb51" class="cell" data-execution_count="143">
+<div class="cell-output cell-output-display" data-execution_count="143">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-12-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The cost of each model scenario represents the loss incurred due to misclassification based on the estimated cost relationship for each mistake. All mistakes being equal (scenario 1), XGBoost costs the least. As the costs of false positives and false negatives diverge (scenarios 2 and 3), the SMOTE logistic regression model becomes more cost efficient than the other models. While SMOTE is making <em>more</em> mistakes overall, it is making fewer <em>expensive</em> mistakes.</p>
+<p>In a healthcare setting where the cost of missed fraud is significantly higher than the cost of mislabeled non-fraud, this is an essential metric to consider. It is safe to assume, based on industry standards, that mistakes are not equal. Consequently, the choice of threshold is significant. Considering scenarios where mistakes differ by 1 and 2 orders of magnitude illustrates the impact.</p>
+<div id="ac3ce8ad-356e-471a-86a1-e6ffdb327178" class="cell" data-execution_count="145">
+<div class="cell-output cell-output-display" data-execution_count="145">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-13-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<div id="7c26f81a-27c0-4118-a8e1-7ff49cd9ac6d" class="cell" data-execution_count="147">
+<div class="cell-output cell-output-display" data-execution_count="147">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-14-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The optimal threshold is defined for where the total cost in mistakes is a minimum. The cost savings is a measure of how much the choice of threshold differs from the default scenario. For mistakes that differ by one order of magnitude, the default threshold of 0.5 is very close to optimal. Based on what I read online, this could be a good ballpark for health insurance fraud. If the difference is much higher, the threshold should be lowered to minimize economic loss.</p>
+<p>Tuning this threshold appropriately depends on the insurer’s particular risk assessment and requires more information. Once these costs have been defined, the right model can be chosen for that insurer. From there, the features most predictive of fraud can be extracted to assist industry in how to prioritize their fraud investigations.</p>
+</section>
+<section id="future-work" class="level2">
+<h2 class="anchored" data-anchor-id="future-work">Future Work</h2>
+<p>I was not expecting my SMOTE logistic regression model to be the best fit for this analysis and would like to revisit my imputation scheme to understand how it compares to the ensemble models. For the purpose of this project, and for simply exploring each model’s economic cost, my imputation scheme was a fine entry point, but I had concerns about how feature means and standard deviations were impacted. Without diving into how the ensemble models handled these missing values, it was not readily apparent how imputation methods compared across algorithms. Before recommending the SMOTE logistic regression model, I would like to dig into this more thoroughly.</p>
+<p>This dataset offers a lot of opportunity for further exploration. Once the business metrics are defined, there is opportunity to revisit the dataset and explore patterns within the group of suspected fraud providers. It would be interesting to use Market Basket Analysis to uncover patterns in billing behavior and to explore patient profiles associated with providers suspected of fraud to get a more nuanced understanding of fraudulent practices.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>NYCDSA Blog Post</category>
+  <guid>https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost.html</guid>
+  <pubDate>Wed, 04 Mar 2026 08:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Machine Learning for Real Estate Business Applications</title>
+  <dc:creator>Margaret Bowers</dc:creator>
+  <link>https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="machine-learning-for-real-estate-business-applications" class="level1">
+<h1>Machine Learning for Real Estate Business Applications</h1>
+<section id="by-margaret-bowers" class="level3">
+<h3 class="anchored" data-anchor-id="by-margaret-bowers">by Margaret Bowers</h3>
+<div id="c4c8c796-b19e-48fc-a8ff-1ae19a9cac52" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><em>Illustrations by <a href="https://unsplash.com/@publicdomainvectors/illustrations">Public domain vectors</a> on <a href="https://unsplash.com/illustrations/heres-a-possible-caption-a-cartoon-house-is-displayed-on-the-green-grass-f_lYPwzA_k0?utm_content=creditCopyText&amp;utm_medium=referral&amp;utm_source=unsplash">Unsplash</a></em></p>
+<p>Machine Learning is a powerful tool for understanding data. But how do we choose the ‘best’ model and who should use it? I explored this question using the Ames Iowa real estate dataset, training a series of linear and tree models to gain insight into which algorithms were best suited for different business applications.</p>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>The Ames dataset, created by Dean de Cock, represents the kind of real estate data that a home buyer or real estate agent might use to understand and predict property values. The dataset I used was slightly smaller than de Cock’s, consisting of 2580 observations and 79 features (not including the target, SalePrice). Using his data dictionary as a guide, I ended up with 48 categorical and 31 numerical features.</p>
+<p>My data analysis included analysing outliers, datatypes, and data imputation. I investigated feature engineering, transformations, feature selection, and multicollinearity and evaluated my tuned and optimized models based on overall performance, model consistency, and model reliability.</p>
+</section>
+<section id="data-imputation" class="level2">
+<h2 class="anchored" data-anchor-id="data-imputation">Data Imputation</h2>
+<p>Twenty-seven features had missing data, 6 of which were missing more than half their data. Many properties had missing values because they lacked the particular structural elements named for those values.</p>
+<div id="b8e51d53-3f0e-472d-a5a4-2a92cbd88492" class="cell" data-execution_count="8">
+<div class="cell-output cell-output-display" data-execution_count="8">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>For my categorical features, I imputed a single missing Electrical feature with its mode and the rest with ‘None’. I imputed my missing numerical features with median values except for GarageYrBlt. During my EDA, I discovered that GarageYrBlt and YearBuilt were highly correlated. Accordingly, I used the value of YearBuilt where it was missing for GarageYrblt, avoiding the introduction of added bias through my imputation method.</p>
+<div id="c92f73be-39f8-4c5c-8154-6c567c58e461" class="cell" data-execution_count="11">
+<div class="cell-output cell-output-display" data-execution_count="11">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="outliers" class="level2">
+<h2 class="anchored" data-anchor-id="outliers">Outliers</h2>
+<p>De Cock’s data dictionary mentions 5 GrLivArea outliers that he recommends removing. Because my dataset was smaller, I only identified 2 with square footage values in excess of 4000 square feet. These 2 data points account for a difference in performance of 0.2%. I also investigated feature variances, discovering more than 100 extreme outliers falling more than 5 standard deviations outside their mean. In the interest of preserving data and making models robust to outliers, I chose not to remove any, including the 2 large square footage observations.</p>
+</section>
+<section id="log-transformations" class="level2">
+<h2 class="anchored" data-anchor-id="log-transformations">Log Transformations</h2>
+<p>Another step in my EDA was to examine numerical feature skew values to see how transformations might impact performance, analyzing feature and target transformation separately. After log transforming 5 of the 6 most highly skewed features, model performance improved by 0.3%. Log transforming the target alone had a much bigger impact, improving model performance by several percentage points. For the sake of simplicity, I transformed the target and compared linear-linear and log-linear models.</p>
+</section>
+<section id="multicollinearity-and-feature-reduction" class="level2">
+<h2 class="anchored" data-anchor-id="multicollinearity-and-feature-reduction">Multicollinearity and Feature Reduction</h2>
+<p>There were 2 groups of highly multicollinear area features that I analyzed.</p>
+<div id="d824225a-e1a3-4c9b-b6d9-4ad694d554ce" class="cell" data-execution_count="14">
+<div class="cell-output cell-output-display" data-execution_count="14">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>These consisted of composite features (total areas) and component features (subsets of areas). I relied on scikit-learn’s SequentialFeatureSelector for feature reduction to resolve issues of multicollinearity and to capture feature interactions.</p>
+<p>It was interesting to see how the penalized models captured feature interactions, retaining the composite area features, as well as significant component area features.</p>
+<div id="e9b9826e-6db1-4ea1-a27e-3ebbdc408783" class="cell" data-execution_count="16">
+<div class="cell-output cell-output-display" data-execution_count="16">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Not surprisingly, using SequentialFeatureSelector (sfs) for the penalized models did not improve model performance, since these algorithms are optimized to do that on their own.</p>
+<p>I reduced my categorical features manually for my linear models by comparing model performance for different subsets of categorical features in combination with my sfs-reduced numerical features.</p>
+</section>
+<section id="models" class="level2">
+<h2 class="anchored" data-anchor-id="models">Models</h2>
+<p>For each algorithm, I trained a base model with all the features and default parameters, and then applied tuning and feature engineering as needed. The models I trained were not exhaustive and are the accumulation of my experimentation. While I always aimed for the highest score, I was interested in understanding model behavior throughout the process of tuning and feature engineering.</p>
+<p>For my linear algorithms, I trained MLR, Ridge, Lasso, and ElasticNet models on my imputed data, using GridSeachCV for hyperparameter tuning.</p>
+<p>For my tree algorithms, I trained RandomForest, GradientBoosting, XGBoost and CatBoost models. I used my imputed data, except for one Catboost model and one XGBoost model to see how their built-in imputation methods handled missing values.</p>
+<p>Tuning had a significant impact on performance. My highest scoring XGBoost benefitted from increasing the number of estimators. The highest performing CatBoost model was the base model trained on the raw data without any tuning. GradientBoosting models benefitted from using RandomizedSearchCV to choose the parameter ranges. And RandomForest performance scores improved as the number of estimators grew.</p>
+</section>
+<section id="performance-metrics" class="level2">
+<h2 class="anchored" data-anchor-id="performance-metrics">Performance Metrics</h2>
+<p>For each model, I used cross-validation as my scoring metric and collected the following data:</p>
+<ul>
+<li><strong>mean-cv:</strong> this is a measure of how well the model explains the full dataset. This is the metric I chose to compare models to one another and to evaluate model accuracy.</li>
+<li><strong>train and test scores:</strong> using a train test split of 80/20, these scores measure how well a model performs on unseen data, or model generalization.</li>
+<li><strong>train-test gap:</strong> this is the difference between how well a model performs on data it was trained on and how well the model performs on unseen data. That is an essential metric for understanding issues of overfitting.</li>
+</ul>
+<p>The behavior of different algorithms to tuning and feature engineering can be seen below:</p>
+<div id="fd1ebd8c-b1a0-4283-8ff7-bb6a7528d01b" class="cell" data-execution_count="20">
+<div class="cell-output cell-output-display" data-execution_count="20">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>For the MLR models, mean-cv scores (right boxplot) are fairly consistent, but performance on unseen data (left boxplot) is more unreliable, due to the algorithm’s sensitivity to tuning and feature engineering. Ridge and Lasso are more consistent but are not the strongest performers. ElasticNet and XGBoost also showed more sensitivity to tuning. RandomForest did not perform well.</p>
+<p>Combining metrics for overall performance (mean-cv) and the train-test difference reveals additional characteristics about each algorithm.</p>
+<div id="b0ca8d02-2b28-4a77-af13-c06b5bedf29d" class="cell" data-execution_count="23">
+<div class="cell-output cell-output-display" data-execution_count="23">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>While the mean-cv score is the most important metric for model comparison, the train-test gap reveals how well an algorithm generalizes to unseen data. For example, the MLR model on the far right (within the family of log-linear models) is very overfitted and will perform 13% worse on data it has never seen as a result.</p>
+</section>
+<section id="business-recommendations" class="level2">
+<h2 class="anchored" data-anchor-id="business-recommendations">Business Recommendations</h2>
+<p>What model should we use? It depends on who is asking and what they intend to use it for. There are many different interests in the field of real estate that include real estate agents, investors, developers, and homeowners.</p>
+<div id="d3007f6d-493f-4e17-8c01-5a6dda615bca" class="cell" data-execution_count="26">
+<div class="cell-output cell-output-display" data-execution_count="26">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The most accurate models are the XGBoost and CatBoost models, explaining as much as 93% of the variance in sale price.</p>
+<p>The strengths of these models include their ease for deciphering feature importance, but proper tuning can take time. The highest performing CatBoost model was trained on raw data. If precision is essential, and there is not a lot of time to tune models or handle missing data, the best choice would be CatBoost. While it is not as accurate as XGBoost, it does offer a good starting point.</p>
+<p>Because these models allow for easy investigation, I would recommend them for real estate developers who want to know how specific features impact sale price. For instance, they would be interested to learn if a fireplace or a finished basement would add more value to the price than it costs to include. I would also recommend these models to help homeowners understand remodeling efforts, such as how transforming a garage into a kitchen might impact their investment.</p>
+<p>A real estate agent might want a fast, general understanding of market values and might not have time to wait for careful tuning. Ridge and Lasso are consistent and fast and would provide a general understanding of a market that can change quickly.</p>
+<p>What about investors? The best performing models are performing at just over 93%. A 7% error is a big risk, which means that these models may not be reliable enough for their purposes. Before investing in better tuning and feature engineering, it would be well advised to consider other algorithms.</p>
+</section>
+<section id="conclusions-and-future-work" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions-and-future-work">Conclusions and Future Work</h2>
+<p>Optimizing models for the best performance is always the goal with any machine learning project, but there are business applications where these top performers might not be the most appropriate. Understanding model behavior helps guide these choices.</p>
+<p>This project provided so many opportunities for investigation, including exploring different approaches for defining and handling outliers. As a real-world application, removing outliers would make algorithms less robust to properties with oversized homes but could improve accuracy. Depending on market trends, this may or may not be advisable. It would be interesting to apply this analysis to local data, have conversations with real estate experts in my community, and see what I could discover about the real estate market in Spokane.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>NYCDSA Blog Post</category>
+  <guid>https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost.html</guid>
+  <pubDate>Thu, 16 Oct 2025 07:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Shiny Python With Tarisio Stringed Instrument and Bow Auction Data</title>
+  <dc:creator>Margaret Bowers</dc:creator>
+  <link>https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="exploring-tarisio-stringed-instrument-and-bow-auction-data" class="level1">
+<h1>Exploring Tarisio Stringed Instrument and Bow Auction Data</h1>
+<section id="by-margaret-bowers" class="level3">
+<h3 class="anchored" data-anchor-id="by-margaret-bowers">by Margaret Bowers</h3>
+<div id="069b2ca8-e824-4771-9e69-332066b739aa" class="cell" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="3">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><em>Instruments of the Spokane Symphony Orchestra, photo by author</em></p>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The goal of this project was to design a Shiny dashboard that analyzes a real-world dataset using Python. As a professional violinist, I wanted to leverage my domain knowledge and interests and chose to use stringed instrument and bow auction data from Tarisio.com for my project.</p>
+<p>Tarisio is an auction house with the largest repository of fine stringed instrument and bow auction data in the world. The foundation of their data is the Cozio Archive, named for Count Ignazio Alessandro Cozio di Salabue, an Italian nobleman who lived from 1755 to 1840. He is considered to be the first great collector of fine stringed instruments.</p>
+<p>The Cozio Archive, containing provenance and pricing data for historical stringed instruments, was formally created in 2003. The more than 55,000 auction entries include data from 40 auction houses and records for instruments and bows by more than 3500 makers. The data covers almost 200 years of auction sales records.</p>
+<p>While intrigued by the most famous makers and the most expensive instruments, and I look at them in detail, I am more interested in the ‘lesser’ (and more affordable) makers represented in the dataset. I wanted a dashboard that would both satisfy my curiosity as a performer and potential investor and that could serve as a resource to other professional musicians.</p>
+</section>
+<section id="obtaining-and-selecting-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="obtaining-and-selecting-the-data">Obtaining and Selecting the Data</h2>
+<p>I scraped the data in late October 2024 from the Makers and Cities pages of Tarisio.com. This posed a visualization challenge, as the sales prices range from less than $100 to almost $16 million. I considered this when designing my app, and chose to utilize multiple plots in order to interact with the earliest data, which disappears in the barcharts when visualizing the dataset in its entirety.</p>
+<p>In the course of my research, I pulled data from both Makers and Cities pages. However, ultimately, I opted to only use data from the Makers pages in my dashboard app. The dataset is comprised of the following features:</p>
+<div id="6ce5f3b9-bb01-4445-9649-e3e53e241b48" class="cell" data-execution_count="12">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Because my entry into this project was based on curiosity and exploration, I imported a ‘Country’ field, as well, in order to examine instrument provenance (‘City’) data, though I ended up scaling back my app to focus on my key investment interests.</p>
+<p>There are 14 types of instruments represented. The chart below lists each kind of instrument and the number of those instruments that appear in the dataset.</p>
+<div id="0b1ea040-fa6f-42e5-9083-53b7852f425b" class="cell" data-execution_count="14">
+<div class="cell-output cell-output-display" data-execution_count="14">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>It is important to understand that 75% of the data is for violins and violin bows. Cellos, cello bows, violas, and viola bows make up 21% of the data, with basses, bass bows, viols, small violins, viola d’amores, and miscellaneous items making up the remainder. The 4 miscellaneous items are bow frogs, the mechanical portions of a bow, without the stick and hair.</p>
+<p>The dataset contains 55,283 auction records. Every entry includes what type of instrument was sold, its maker, sale date, and sale price. All in all 3,573 unique makers are represented, many of which have only appeared on a few auction records. Because of this sparsity, I organized my Makers page to load plots for top makers first. That order gives the user a nice entry into rich data. As this is not an optimal way to search the makers’ data, I also include a section that allows for alphabetical searches on maker names.</p>
+</section>
+<section id="visualizing-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="visualizing-the-data">Visualizing the Data</h2>
+<div id="2c6acc02-254e-4da5-bf55-e2c3a4df26f1" class="cell" data-execution_count="21">
+<div class="cell-output cell-output-display" data-execution_count="21">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>It was interesting to see how the price ranges varied over time. The first 100 years of the dataset have individual sales prices ranging from $20 to $7619. Prices increased in 1930-1965 hitting a high of $52,800. But the real jump came in 1988 when the first of 36 $1 million dollar violins appeared. After that, auction prices soared to over $15.8 million. I noticed quickly that there were a few makers who were dominant early in the data; their names were invariably associated with some of the highest auction prices.</p>
+<div id="ffec8ac6-5106-48fd-8388-8e72f759d8db" class="cell" data-execution_count="24">
+<div class="cell-output cell-output-display" data-execution_count="24">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>We can see this early in the dataset. The columns are color coded, with each color representing a different maker. The column numbers are the number of instruments sold each year. The pale green represents annual total sales for Antonio Stradivari. The lavender represents total annual sales for Bartolomeo Giuseppe ‘del Gesu’ Guarneri. Sales contributions from other makers are quite low by comparison. This trend continues throughout the dataset, with a few makers dominating annual sales. Giovanni Battista Guadagnini exerts a heavy influence on sales as well, but his instruments do not show up until 1935.</p>
+<p>The total wealth reflected in the dataset is over $822 million. Out of over 55,000 sales records, there are only 166 Antonio Stradivari instruments, 116 Guadagninis, and 32 ‘del Gesus’. Though that adds up to just 314 instruments, they are so highly prized that they make up 20% of the wealth in sales.</p>
+<p>Bows first appear in the data in 1969 and generate over $132 million in sales. Eugene Sartory’s bows make up 12.8% of bow sales, with bows by Dominique Pecatte and Hill &amp; Sons coming in at 7.0% and 6.0% respectively. I was surprised that ‘Le Jeune’ Tourtes came in at 5.2% but noticed that they account for the most valuable individual bow sales. ‘Le Jeune’ Tourtes make up 13 of the top 20 most valuable bows in the dataset. Tourtes are comparatively rare. Only 119 of them move through the data in contrast to 1274 Sartorys, 224 Pecattes, and 3075 Hills.</p>
+</section>
+<section id="the-app" class="level2">
+<h2 class="anchored" data-anchor-id="the-app">The app</h2>
+<p>I designed my app to give users the ability to do this kind of exploration on their own. I wanted users to be able to look at how instruments are represented in the data and how some of the greatest makers dominate that data. I wanted users to be able to look closely at each maker’s records to see how their sales trend over time. I also wanted to show how current auction prices compare across makers.</p>
+<p>The ‘About’ page orients the user into the data they will be exploring, showing how instruments are represented (violins and violin bows, most heavily) and how top makers influence the records (with maker statistics for total auction sales, instrument counts, and types of instruments sold).</p>
+<div id="5828d06f-236a-4103-9591-cd2e6d9ea638" class="cell" data-execution_count="27">
+<div class="cell-output cell-output-display" data-execution_count="27">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The ‘Instruments’ page allows users to choose an instrument type and see yearly price data and instrument sale counts over the time frame of the dataset. Three plots allow the user to interact with the early years and middle range of the dataset when prices were very low compared to the last 60 years. There is also an option to choose some of the most financially dominant makers to see how their sales move through the data.</p>
+<div id="49d03fbc-b6c1-4fcc-8da3-d92975e65cff" class="cell" data-execution_count="29">
+<div class="cell-output cell-output-display" data-execution_count="29">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The ‘Makers’ page allows a user to look at all of the auction records for a given maker and to see how their sales have trended over time. I chose to fit the data with a 2-degree polynomial to visualize sales trends.</p>
+<p>Because of data sparsity for some makers, I loaded the page with makers ordered by highest total auction sales (the richest data) first. With over 3500 makers, sorting through it all is overwhelming, so I included a second plot with makers sorted alphabetically.</p>
+<div id="fa084a41-285f-4a66-8525-a090e9135a8e" class="cell" data-execution_count="31">
+<div class="cell-output cell-output-display" data-execution_count="31">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The title of each maker plot includes the total auction sales for that maker, as well as the types of instruments they made, to inform checkbox selection. I did not include Small Violin, Miscellaneous, Viola d’Amore, or Viols in the checkboxes since there are so few of them and they would only be applied to a few makers. In order to see this data, a user can select one of those instrument types on the Price Range page to return a list of relevant makers to explore.</p>
+<p>The ‘Price Range’ page is the least visually interesting page of the app, but it is the most interesting to me. As a professional, I have considered upgrading instruments and want a better understanding of which makers are comparable within my price range.</p>
+<div id="025c3d31-de25-4039-a2f8-91e975cb7ce5" class="cell" data-execution_count="33">
+<div class="cell-output cell-output-display" data-execution_count="33">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>After the user selects an instrument, the table sorts on maker data for its most recent sale prices. A user can choose a price range of interest and then see the makers whose most recent sales are within that range, as well as the dates for those sales. There is also data for highest and lowest sales prices and dates for those sales as a point of reference. The user can then toggle back to the Makers page and explore trends for these makers to get a sense of how their sales have evolved over time.</p>
+</section>
+<section id="future-work-and-conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="future-work-and-conclusions">Future Work and Conclusions</h2>
+<p>Because this data was scraped in October 2024, it does not include recent modifications and auction data. It would be an interesting project to implement real-time features, so that the data reflects the current state of the archive.</p>
+<p>As a professional violinist, I found this data fascinating. Buying a professional grade instrument is a huge and necessary investment for a professional musician. It is always our hope, as investors, that we will buy something that appreciates over time. The top makers are, so far, good investments, but they are out of reach for musicians like me. There are many other financially accessible makers whose sales prices have been increasing, plateauing, or trending downward. While this is not a sure indication of how instruments will be valued in the future, it is interesting to consider and to compare with makers across similar price tiers.</p>
+<p><a href="https://margaretbowers.shinyapps.io/tarisio-app/">App</a></p>
+<p><em>Please note that this app is not designed for small devices like cell phones and is best viewed on a laptop or other full-sized screen.</em></p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>NYCDSA Blog Post</category>
+  <guid>https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost.html</guid>
+  <pubDate>Wed, 29 Jan 2025 08:00:00 GMT</pubDate>
+</item>
+<item>
+  <title>Data Analysis with Python</title>
+  <dc:creator>Margaret Bowers</dc:creator>
+  <link>https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost.html</link>
+  <description><![CDATA[ 
+
+
+
+
+
+<section id="us-honey-consumption-with-python-1998-2012" class="level1">
+<h1>US Honey Consumption With Python (1998-2012)</h1>
+<section id="by-margaret-bowers" class="level3">
+<h3 class="anchored" data-anchor-id="by-margaret-bowers">by Margaret Bowers</h3>
+<div id="e9026b69-dad2-4f2a-a5fa-704b9ce74c68" class="cell" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="2">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p><em>Featured image by terski via Pixabay.</em></p>
+</section>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>One of the things I like most about living in Eastern Washington is gardening. While I enjoy growing produce and flowers for myself, I also think about what will attract bees. They serve a vital function for gardeners as pollinators. Also seeing swarms of bees on a hot summer day and listening to their rich hum is a joyful experience.</p>
+<p>This is probably why I gravitated towards a Kaggle data set on Honey Production in the US for my first data science project. I was curious to learn which states produce the most honey and what those levels of production look like. I also wanted to find out which states might be a good choice for setting up a commercial honey production business and what factors a honey producer should consider.</p>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p>The data I used for this project is from the Kaggle dataset: <a href="https://www.kaggle.com/datasets/jessicali9530/honey-production/data">Honey Production in the USA (1998-2012)</a>.</p>
+<p>As noted in the data card, the primary source for this data is the USDA’s National Agricultural Statistics Service (NASS). NASS collects data from a wide range of agricultural sectors and provides statistics for agricultural workers and people who depend on agriculture for their livelihoods. Honey production is just one subset of the data they collect.</p>
+<p>The data consists of numerical values for number of colonies, yield per colony, stocks, and average price ,as well as categorical fields for the state and the year data was collected. There were also two derived variables: total production (the product of number of colonies and yield per colony) and value of production (the product of average price and total production).</p>
+<p>I understand intuitively what each of these fields represented, except for stocks. I know that stocks are honey reserves held back by producers, as defined in the data set, but I did not really understand what role they played in honey production. A major honey producer in my home state of Washington explained to me that reserves of honey are held back for two reasons: either wholesalers have too much stock and are not buying, or prices are too low and they hope to sell their honey for more the following year. It’s possible to do that with honey because – unlike standard produce – it does not spoil. Honey has even been found in ancient Egyptian pyramids with no evidence of microbial decay.</p>
+</section>
+<section id="analysis" class="level2">
+<h2 class="anchored" data-anchor-id="analysis">Analysis</h2>
+<p>With a better handle on the data, I did some preliminary EDA. While the dataset had no null values, upon closer inspection there were some states missing entirely. Six states do not appear in the dataset: AK, CT, DE, MA, NH, and RI. After some digging around, I discovered that this is not unusual. The USDA aggregates data by state to ensure data from individual farming operations are not disclosed. Some states are left out for privacy reasons.</p>
+<p>There were also 4 states with incomplete data, where not every year was represented in the dataset. South Carolina only had reports for 3 years of the 15 year dataset, while Maryland and Oklahoma had 6. Nevada had 11 years of data. I decided to exclude these four states, leaving 40 of 50 states to provide a snapshot of US honey consumption.</p>
+</section>
+<section id="national-trends" class="level2">
+<h2 class="anchored" data-anchor-id="national-trends">National Trends</h2>
+<p>Looking first at how the fields trended nationally, I observed an overall decline in total production, yield per colony, and number of colonies with prices generally increasing over time.</p>
+<div id="2296cb73-2458-4d20-84a2-e4012293a5d8" class="cell" data-execution_count="5">
+<div class="cell-output cell-output-display" data-execution_count="5">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The data shows that the number of colonies rather than the yield per colony, is the driver of production. It is interesting to see the big uptick in colony numbers starting in 2008, which corresponds with declining yield. Colony Collapse Disorder was first officially reported in 2006. I wonder if beekeepers started bulking up their colony numbers to try and mitigate ailing colonies.</p>
+<p>Next, I looked at individual states. My research outside of the dataset verified that yield per colony can be wildly variable, which is apparent in the line plots below.</p>
+<div id="bfa409ff-ace4-4ab4-8aae-02e20d1ccbc2" class="cell" data-execution_count="7">
+<div class="cell-output cell-output-display" data-execution_count="7">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>A typical beehive in the US can generate between 10 and 200 pounds of honey per year. That’s quite a range!</p>
+<p>What was most interesting to me, when looking at state’s variables, was how most states cluster together with a handful of states clearly outperforming all the rest. Visualizing the total production by state makes it clear that a few states dominate honey production.</p>
+<div id="c13bbdeb-25c7-4b3a-ab60-9c37ad96f0f8" class="cell" data-execution_count="9">
+<div class="cell-output cell-output-display" data-execution_count="9">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>North Dakota is clearly the largest producer of honey. The states with the lowest levels of production were Maine, Kentucky and Virginia. These states also had some of the highest honey prices. Virginia has the highest average price of honey, followed by Illinois and Kentucky. Louisiana, Mississippi, and Arkansas have the lowest average prices of honey.</p>
+<p>When I grouped the top 8 producers together and looked at how their production levels compared to all the others, I could really see how they dominated production for this time period.</p>
+<div id="2b5bad3d-1850-4d80-a108-f302b39fdf9b" class="cell" data-execution_count="11">
+<div class="cell-output cell-output-display" data-execution_count="11">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>The bottom producers have more uniform levels of production while there appears to be a lot of variability in production from the top producers. The bottom producers (blue line) were responsible for a little over 5 million pounds of honey over the 15 years in which data was collected. The majority (80%) of the top producers (red line) produced between 5 and 30 million pounds of honey while the top 20% of that group produced more than 30 million pounds of honey. Comparing production levels another way reveals that a few states may be responsible for most of the honey produced.</p>
+<div id="df8d9a89-4a58-455c-98ac-e3a419583022" class="cell" data-execution_count="13">
+<div class="cell-output cell-output-display" data-execution_count="13">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>In fact, 4 states were responsible for just over half the honey produced in the US:</p>
+<div id="be8036ad-ee89-477f-899e-dd5ff037ac5f" class="cell" data-execution_count="18">
+<div class="cell-output cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img" width="600"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>I included percentages for Montana and Minnesota here to show why I did not group them with top producers. While their contributions appear substantial in the tree map, percentages are more similar to the rest of the states’ production levels.</p>
+<p>At this point in my analysis I grouped these top 4 producers into ‘top producers’ and all the rest into ‘bottom producers’. Looking at price quantiles for top and bottom producers, I examined their stocks, production, and prices.</p>
+<div id="c6088f70-b750-4586-8690-40f9d49f0082" class="cell" data-execution_count="21">
+<div class="cell-output cell-output-display" data-execution_count="21">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>It is interesting to note that even though top producers are responsible for more total production, bottom producers are actually holding back more stocks. These bottom producers generally have more expensive honey and withhold more inventory. The top 4 states, with some of the cheapest prices, are moving more honey through the market.</p>
+<div id="977d76ea-c606-431d-836b-0497758ccc26" class="cell" data-execution_count="23">
+<div class="cell-output cell-output-display" data-execution_count="23">
+<div>
+<figure class="figure">
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions">Conclusions</h2>
+<p>From 1998-2012, North Dakota, California, South Dakota, and Florida were responsible for just over half the honey produced in the United States. These states offer some of the cheapest honey. That means that it may be challenging to turn a profit when setting up a honey production business in these states where profit margins would have to be lower to accommodate some of the lowest prices of honey in the industry. If your goal is to sell your honey for higher prices, you may want to aim for Virginia, Illinois, and Kentucky. Of course, there are other factors contributing to the prices in different states, including the anticipated yield for the area, the cost of production and the quality of the honey. All would need to be taken into consideration when selecting the location of the business.</p>
+</section>
+<section id="further-research" class="level2">
+<h2 class="anchored" data-anchor-id="further-research">Further Research</h2>
+<p>What about North Dakota and South Dakota make them such great states for honey production? I remember driving through North Dakota many years ago and was charmed by all the sunflowers. Yellow sunflower disks followed the arc of the sun as far as the eye could see.</p>
+<p>North Dakota and South Dakota are the primary producers of sunflower annually in the US. North Dakota produces a whopping 1.1 billion pounds of sunflower and South Dakota 817 million pounds. The third and fourth largest producers of sunflowers are far behind that: 132 million pounds (Minnesota) and 61 million pounds (Texas). As bees are essential to sunflower pollination, this must play a role in their honey production success.</p>
+<p>With so much variability in colony yield, I wonder how specific crops contribute to honey production. What factors influence colony yield and how are they managed to maximize production?</p>
+<p>This was not the data set to answer these questions, but I imagine there are rich data sets out there describing the relationship between crops and bees just waiting to be explored.</p>
+
+
+</section>
+</section>
+
+ ]]></description>
+  <category>NYCDSA Blog Post</category>
+  <guid>https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost.html</guid>
+  <pubDate>Tue, 08 Oct 2024 07:00:00 GMT</pubDate>
+</item>
+</channel>
+</rss>
