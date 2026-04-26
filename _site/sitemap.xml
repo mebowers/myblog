@@ -1,51 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://your-website-url.example.com/about.html</loc>
-    <lastmod>2026-02-27T15:25:13.640Z</lastmod>
+    <loc>https://mebowers.github.io/about.html</loc>
+    <lastmod>2026-04-26T17:37:09.917Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/welcome/index.html</loc>
-    <lastmod>2026-04-26T17:13:11.650Z</lastmod>
+    <loc>https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost.html</loc>
+    <lastmod>2026-04-26T17:37:09.922Z</lastmod>
   </url>
   <url>
-    <loc>https://your-website-url.example.com/posts/post-with-code/index.html</loc>
-    <lastmod>2026-02-27T15:25:13.640Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/index.html</loc>
-    <lastmod>2026-02-27T15:25:13.639Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/Statistical-Analysis/Untitled.html</loc>
-    <lastmod>2026-03-04T16:42:41.108Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/PCA/data/Untitled.html</loc>
-    <lastmod>2026-03-23T14:17:51.678Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost.html</loc>
-    <lastmod>2026-04-10T17:31:06.962Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/Ames Blog Post/Untitled.html</loc>
-    <lastmod>2026-04-10T17:01:53.870Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/Ames Blog Post/Ames_blogpost.html</loc>
-    <lastmod>2026-04-10T17:32:27.949Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/Shiny Python Blog Post/Shiny_Python_blogpost.html</loc>
-    <lastmod>2026-04-10T18:24:07.951Z</lastmod>
-  </url>
-  <url>
-    <loc>https://your-website-url.example.com/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost.html</loc>
-    <lastmod>2026-04-10T18:25:29.888Z</lastmod>
+    <loc>https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost.html</loc>
+    <lastmod>2026-04-26T17:37:10.126Z</lastmod>
   </url>
   <url>
     <loc>https://mebowers.github.io/posts/welcome/index.html</loc>
-    <lastmod>2026-04-26T17:13:11.650Z</lastmod>
+    <lastmod>2026-04-26T17:37:10.138Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost.html</loc>
+    <lastmod>2026-04-26T17:37:10.096Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost.html</loc>
+    <lastmod>2026-04-26T17:37:09.939Z</lastmod>
+  </url>
+  <url>
+    <loc>https://mebowers.github.io/index.html</loc>
+    <lastmod>2026-04-26T17:37:09.917Z</lastmod>
   </url>
 </urlset>

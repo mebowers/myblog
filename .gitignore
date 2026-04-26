@@ -1,0 +1,6 @@
+/.quarto/
+**/*.quarto_ipynb
+posts/Guassian-Naive-Bayes/
+posts/Hypothesis-Testing/
+posts/PCA/
+

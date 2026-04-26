@@ -6,15 +6,15 @@
       version="2.0">
 <channel>
 <title>mebowers blog</title>
-<link>https://your-website-url.example.com/</link>
-<atom:link href="https://your-website-url.example.com/index.xml" rel="self" type="application/rss+xml"/>
+<link>https://mebowers.github.io/</link>
+<atom:link href="https://mebowers.github.io/index.xml" rel="self" type="application/rss+xml"/>
 <description>A blog for my Data Science Bootcamp review</description>
 <generator>quarto-1.8.27</generator>
 <lastBuildDate>Fri, 10 Apr 2026 07:00:00 GMT</lastBuildDate>
 <item>
   <title>Welcome To My Blog</title>
   <dc:creator>Margaret Bowers</dc:creator>
-  <link>https://your-website-url.example.com/posts/welcome/</link>
+  <link>https://mebowers.github.io/posts/welcome/</link>
   <description><![CDATA[ 
 
 
@@ -22,7 +22,7 @@
 
 
 <p>Wecome to my data science and analytics blog dedicated to reviewing and exploring what I learned in my data science bootcamp with NYC Data Science Academy.</p>
-<p><img src="https://your-website-url.example.com/posts/welcome/glenrose_trail.jpg" class="img-fluid"></p>
+<p><img src="https://mebowers.github.io/posts/welcome/glenrose_trail.jpg" class="img-fluid"></p>
 <p>A little bit about me…</p>
 <p>I am a professional violinist in Spokane, Washington, with a long-ago background in Physics. I am exploring career opportunities in data science and am eager to learn new things.</p>
 <p>A long time ago, I earned a Bachelor’s of Science degree in Physics from the University of Rochester and was a music major in violin performance at the Eastman School of Music, although I did not complete a music degree. I took lessons as a meditative diversion from my physics studies and never considered performance as a viable occupation. When I graduated, I spent some time working at the Los Alamos National Laboratory before realizing that I love music and was not ready to give up that part of my life for graduate school. I auditioned for and got into the Santa Fe Symphony and then the Spokane Symphony Orchestra, where I have spent the last two decades as a professional violinist.</p>
@@ -37,13 +37,13 @@
 
  ]]></description>
   <category>news</category>
-  <guid>https://your-website-url.example.com/posts/welcome/</guid>
+  <guid>https://mebowers.github.io/posts/welcome/</guid>
   <pubDate>Fri, 10 Apr 2026 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Capstone: Machine Learning for Healthcare Fraud Detection</title>
   <dc:creator>Margaret Bowers</dc:creator>
-  <link>https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost.html</link>
+  <link>https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost.html</link>
   <description><![CDATA[ 
 
 
@@ -58,7 +58,7 @@
 <div class="cell-output cell-output-display" data-execution_count="120">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -79,7 +79,7 @@
 <div class="cell-output cell-output-display" data-execution_count="122">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -92,7 +92,7 @@
 <div class="cell-output cell-output-display" data-execution_count="124">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -101,7 +101,7 @@
 <div class="cell-output cell-output-display" data-execution_count="126">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -110,7 +110,7 @@
 <div class="cell-output cell-output-display" data-execution_count="128">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -150,7 +150,7 @@
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img" width="400"></p>
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img" width="400"></p>
 </figure>
 </div>
 </div>
@@ -160,7 +160,7 @@
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img" width="500"></p>
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img" width="500"></p>
 </figure>
 </div>
 </div>
@@ -176,7 +176,7 @@
 <div class="cell-output cell-output-display" data-execution_count="136">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -186,7 +186,7 @@
 <div class="cell-output cell-output-display" data-execution_count="139">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -196,7 +196,7 @@
 <div class="cell-output cell-output-display" data-execution_count="141">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-11-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-11-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -211,7 +211,7 @@
 <div class="cell-output cell-output-display" data-execution_count="143">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-12-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-12-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -222,7 +222,7 @@
 <div class="cell-output cell-output-display" data-execution_count="145">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-13-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-13-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -231,7 +231,7 @@
 <div class="cell-output cell-output-display" data-execution_count="147">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-14-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost_files/figure-html/cell-14-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -250,13 +250,13 @@
 
  ]]></description>
   <category>NYCDSA Blog Post</category>
-  <guid>https://your-website-url.example.com/posts/Capstone Blog Post/Capstone_blogpost.html</guid>
+  <guid>https://mebowers.github.io/posts/Capstone Blog Post/Capstone_blogpost.html</guid>
   <pubDate>Wed, 04 Mar 2026 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Machine Learning for Real Estate Business Applications</title>
   <dc:creator>Margaret Bowers</dc:creator>
-  <link>https://your-website-url.example.com/posts/Ames Blog Post/Ames_blogpost.html</link>
+  <link>https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost.html</link>
   <description><![CDATA[ 
 
 
@@ -271,7 +271,7 @@
 <div class="cell-output cell-output-display" data-execution_count="3">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -291,7 +291,7 @@
 <div class="cell-output cell-output-display" data-execution_count="8">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -301,7 +301,7 @@
 <div class="cell-output cell-output-display" data-execution_count="11">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -322,7 +322,7 @@
 <div class="cell-output cell-output-display" data-execution_count="14">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -333,7 +333,7 @@
 <div class="cell-output cell-output-display" data-execution_count="16">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -361,7 +361,7 @@
 <div class="cell-output cell-output-display" data-execution_count="20">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -372,7 +372,7 @@
 <div class="cell-output cell-output-display" data-execution_count="23">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -386,7 +386,7 @@
 <div class="cell-output cell-output-display" data-execution_count="26">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -408,13 +408,13 @@
 
  ]]></description>
   <category>NYCDSA Blog Post</category>
-  <guid>https://your-website-url.example.com/posts/Ames Blog Post/Ames_blogpost.html</guid>
+  <guid>https://mebowers.github.io/posts/Ames Blog Post/Ames_blogpost.html</guid>
   <pubDate>Thu, 16 Oct 2025 07:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Shiny Python With Tarisio Stringed Instrument and Bow Auction Data</title>
   <dc:creator>Margaret Bowers</dc:creator>
-  <link>https://your-website-url.example.com/posts/Shiny Python Blog Post/Shiny_Python_blogpost.html</link>
+  <link>https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost.html</link>
   <description><![CDATA[ 
 
 
@@ -429,7 +429,7 @@
 <div class="cell-output cell-output-display" data-execution_count="3">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -451,7 +451,7 @@
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img" width="600"></p>
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img" width="600"></p>
 </figure>
 </div>
 </div>
@@ -462,7 +462,7 @@
 <div class="cell-output cell-output-display" data-execution_count="14">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -476,7 +476,7 @@
 <div class="cell-output cell-output-display" data-execution_count="21">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -486,7 +486,7 @@
 <div class="cell-output cell-output-display" data-execution_count="24">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -503,7 +503,7 @@
 <div class="cell-output cell-output-display" data-execution_count="27">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -513,7 +513,7 @@
 <div class="cell-output cell-output-display" data-execution_count="29">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -524,7 +524,7 @@
 <div class="cell-output cell-output-display" data-execution_count="31">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -535,7 +535,7 @@
 <div class="cell-output cell-output-display" data-execution_count="33">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -555,13 +555,13 @@
 
  ]]></description>
   <category>NYCDSA Blog Post</category>
-  <guid>https://your-website-url.example.com/posts/Shiny Python Blog Post/Shiny_Python_blogpost.html</guid>
+  <guid>https://mebowers.github.io/posts/Shiny Python Blog Post/Shiny_Python_blogpost.html</guid>
   <pubDate>Wed, 29 Jan 2025 08:00:00 GMT</pubDate>
 </item>
 <item>
   <title>Data Analysis with Python</title>
   <dc:creator>Margaret Bowers</dc:creator>
-  <link>https://your-website-url.example.com/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost.html</link>
+  <link>https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost.html</link>
   <description><![CDATA[ 
 
 
@@ -576,7 +576,7 @@
 <div class="cell-output cell-output-display" data-execution_count="2">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-2-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -607,7 +607,7 @@
 <div class="cell-output cell-output-display" data-execution_count="5">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-3-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -618,7 +618,7 @@
 <div class="cell-output cell-output-display" data-execution_count="7">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-4-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -629,7 +629,7 @@
 <div class="cell-output cell-output-display" data-execution_count="9">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-5-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -640,7 +640,7 @@
 <div class="cell-output cell-output-display" data-execution_count="11">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-6-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -650,7 +650,7 @@
 <div class="cell-output cell-output-display" data-execution_count="13">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-7-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -660,7 +660,7 @@
 <div class="cell-output cell-output-display">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img" width="600"></p>
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-8-output-1.png" class="img-fluid figure-img" width="600"></p>
 </figure>
 </div>
 </div>
@@ -671,7 +671,7 @@
 <div class="cell-output cell-output-display" data-execution_count="21">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-9-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -681,7 +681,7 @@
 <div class="cell-output cell-output-display" data-execution_count="23">
 <div>
 <figure class="figure">
-<p><img src="https://your-website-url.example.com/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
+<p><img src="https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost_files/figure-html/cell-10-output-1.png" class="img-fluid figure-img"></p>
 </figure>
 </div>
 </div>
@@ -704,7 +704,7 @@
 
  ]]></description>
   <category>NYCDSA Blog Post</category>
-  <guid>https://your-website-url.example.com/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost.html</guid>
+  <guid>https://mebowers.github.io/posts/Honey Consumption Blog Post/Honey_Consumption_blogpost.html</guid>
   <pubDate>Tue, 08 Oct 2024 07:00:00 GMT</pubDate>
 </item>
 </channel>
